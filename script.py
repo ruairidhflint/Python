@@ -2,7 +2,9 @@ import os
 
 host_path = "/private/etc/hosts"
 redirect = "127.0.01"
-blocked_list = ["https://rory.codes", "rory.codes", "www.rory.codes"]
+
+with open('settings.txt') as settings:
+    blocked_list = settings.read().splitlines()
 
 with open(host_path, "r+") as file:
     host_content = file.read()
