@@ -2,10 +2,9 @@ import os
 import time
 
 host_path = "/private/etc/hosts"
-redirect = "127.0.01"
+redirect = "127.0.0.1"
 
 while True:
-    print('running...')
     with open('default.txt') as default:
         default_host = default.read()
 

@@ -9,7 +9,6 @@ A Python Application that runs behind the scenes blocking access to websites as 
 - List is responsive and dynamically read eg: if an item is removed from the .txt file, it is removed from
   the blocked list too
 
-
 ## Second Iteration
 - Ability to add times/dates to block websites and allow usage at other times
 - Build GUI for Application 
