@@ -11,9 +11,10 @@ host_path = "/private/etc/hosts"
 redirect = "127.0.01"
 blocked_list = ["https://rory.codes", "rory.codes", "www.rory.codes"]
 
-host_file = open(os.path.expanduser(host_path))
-
-host_content = host_file.read()
-
-print(host_path)
-print(host_content)
+with open(host_path, "r+") as file:
+    host_content = file.read()
+    for website in blocked_list:
+        if website in host_path:
+            pass
+        else:
+            file.write(f'{redirect} {website} \n')
