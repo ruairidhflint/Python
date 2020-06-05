@@ -8,8 +8,12 @@
 import os
 
 host_path = "/private/etc/hosts"
+redirect = "127.0.01"
+blocked_list = ["https://rory.codes", "rory.codes", "www.rory.codes"]
 
-test = open(os.path.expanduser(host_path))
+host_file = open(os.path.expanduser(host_path))
+
+host_content = host_file.read()
 
 print(host_path)
-print(test)
+print(host_content)
