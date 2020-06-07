@@ -10,5 +10,5 @@ A Python Application that runs behind the scenes blocking access to websites as 
   the blocked list too  ✓
 
 ## Second Iteration
-- Ability to add times/dates to block websites and allow usage at other times
+- Ability to add times/dates to block websites and allow usage at other times ✓
 - Build GUI for Application 
